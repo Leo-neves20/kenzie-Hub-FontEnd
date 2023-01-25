@@ -25,7 +25,7 @@ const schema = yup
       .matches(/[A-Z]/, " Deve conter almenos uma letra maiúscula  ")
       .matches(/(\W|_)/, " Deve conter almenos um caracter especial ")
       .matches(/(\d)/, " Deve conter almenos um número            ")
-      .matches(/.{8,}/, " Deve conter 5 dígitos                    ")
+      .matches(/.{8,}/, " Deve conter 8 dígitos                    ")
       .required("Senha obrigatória"),
     confPassword: yup
       .string()
