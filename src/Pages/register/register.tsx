@@ -21,10 +21,10 @@ const schema = yup
     email: yup.string().required("Email é obrigatório"),
     password: yup
       .string()
-      .matches(/[a-z]/, " Deve conter almenos uma letra minúscula  ")
-      .matches(/[A-Z]/, " Deve conter almenos uma letra maiúscula  ")
-      .matches(/(\W|_)/, " Deve conter almenos um caracter especial ")
-      .matches(/(\d)/, " Deve conter almenos um número            ")
+      .matches(/[a-z]/, " Deve conter ao menos uma letra minúscula  ")
+      .matches(/[A-Z]/, " Deve conter ao menos uma letra maiúscula  ")
+      .matches(/(\W|_)/, " Deve conter ao menos um caracter especial ")
+      .matches(/(\d)/, " Deve conter ao menos um número            ")
       .matches(/.{8,}/, " Deve conter 8 dígitos                    ")
       .required("Senha obrigatória"),
     confPassword: yup
